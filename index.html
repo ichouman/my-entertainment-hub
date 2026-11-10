@@ -182,6 +182,81 @@
   @media(max-width:760px){.poster-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.featured-posters{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.featured-posters .poster-card:nth-child(n+4){display:none}.poster-body{padding:10px 9px}.poster-body strong{font-size:12px}.poster-sub{font-size:10px}.poster-kind{font-size:8px}.catalog-heading{padding:21px;min-height:0}.catalog-hero-icon{width:48px;height:48px;border-radius:13px}.catalog-hero-icon .icon{width:28px;height:28px}.catalog-source-line{max-width:150px}.mobile-nav .navbtn{width:16.3%;font-size:9px;padding:6px 2px}.mobile-nav .navbtn .icon{height:19px;width:19px}.detail-art{width:102px}.catalog-modal{padding:17px}.detail-text h2{font-size:23px}}
   @media(max-width:350px){.featured-posters{grid-template-columns:repeat(2,minmax(0,1fr))}.featured-posters .poster-card:nth-child(n+3){display:none}.detail-art{width:85px}.detail-text h2{font-size:20px}}
   @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  /* V3 TV episode tracker — keeps the V2 navigation and layouts intact */
+  .tracker-strip{border:1px solid #504778;background:radial-gradient(circle at 92% 10%,#856ac23d,transparent 48%),linear-gradient(145deg,#231e3a,#171b2c);border-radius:20px;padding:21px;margin:24px 0 26px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+  .tracker-strip h2{font-size:20px;margin:5px 0 7px}.tracker-strip p{font-size:12px;color:#c0bed0;line-height:1.6;margin:0;max-width:520px}
+  .tracker-kicker{text-transform:uppercase;letter-spacing:1.7px;font-size:10px;color:#cdb9ff;font-weight:800}
+  .tracker-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:15px 0 26px}
+  .tracker-show{border:1px solid #34354c;background:#171b2a;border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0}
+  .tracker-show-head{display:flex;align-items:center;gap:11px;min-width:0}
+  .tracker-small-poster{height:83px;width:57px;flex:none;object-fit:cover;border-radius:8px;background:linear-gradient(145deg,#534679,#1b2440);border:1px solid #4a4767}
+  .tracker-show-name{font-size:14px;font-weight:800;line-height:1.3;margin:0 0 5px;overflow-wrap:anywhere}
+  .tracker-sub{font-size:11px;color:#b8b9c9;line-height:1.6;margin:0}
+  .tracker-progress{height:8px;background:#333247;border-radius:99px;overflow:hidden;position:relative}
+  .tracker-progress > span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#a084f1,#75d7c1);transition:width .15s ease}
+  .tracker-below{display:flex;justify-content:space-between;align-items:center;gap:8px;color:#c4c5d2;font-size:11px}
+  .tracker-below strong{color:#dfccff;font-size:12px}
+  .tracker-card-button{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid #6b588d;border-radius:11px;background:#302845;color:#e2ccff;padding:10px 12px;font-size:12px;font-weight:800;width:100%}
+  .tracker-empty{border:1px dashed #50526b;border-radius:16px;background:#161a26;padding:22px;text-align:center;margin:12px 0 26px;color:#c4c4d1}
+  .tracker-empty p{line-height:1.6;font-size:12px;margin:8px 0 15px}
+  .tv-card-cta{white-space:nowrap}
+  .tracker-modal{width:min(100%,900px);padding:20px;max-height:93dvh}
+  .tracker-head{display:flex;gap:13px;align-items:center;margin-bottom:13px}
+  .tracker-head-poster{width:68px;height:98px;flex:none;border-radius:10px;object-fit:cover;background:#3a3550}
+  .tracker-head-detail{min-width:0;flex:1}.tracker-head-detail h2{font-size:22px;margin:4px 0 6px;line-height:1.15;overflow-wrap:anywhere}
+  .tracker-head-detail p{color:#acb0c1;margin:0;font-size:11px;line-height:1.4}
+  .tracker-top-actions{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin:10px 0 13px}
+  .tracker-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:12px 0}
+  .tracker-metric{padding:11px 12px;background:#111624;border:1px solid #35394c;border-radius:12px;min-width:0}
+  .tracker-metric strong{display:block;font-size:18px;color:#eadcff;margin-bottom:3px;white-space:nowrap}
+  .tracker-metric small{font-size:10px;color:#a8adbd}
+  .tracker-callout{border:1px solid #52665e;background:#1d3030;border-radius:12px;padding:11px 12px;color:#c7f4e6;font-size:12px;line-height:1.6;margin:9px 0}
+  .tracker-callout.muted-callout{background:#171c2b;border-color:#393c52;color:#b5b9c8}
+  .tracker-controls{display:flex;flex-wrap:wrap;align-items:center;gap:9px;justify-content:space-between;margin:17px 0 11px}
+  .tracker-controls label{font-size:11px;color:#babed0;font-weight:800}
+  .tracker-controls select{border:1px solid #52496e;background:#151726;color:#f4e8ff;border-radius:10px;padding:9px 10px;min-width:130px}
+  .tracker-episodes{display:grid;gap:9px;margin-top:12px}
+  .tracker-episode{display:flex;gap:10px;align-items:center;background:#111625;border:1px solid #333749;border-radius:12px;padding:12px}
+  .tracker-episode.is-watched{border-color:#40534d;background:#172323}
+  .tracker-episode.is-upcoming{opacity:.7}
+  .tracker-episode-flag{flex:none;border:1px solid #55536b;background:#25253b;color:#e1d7ff;border-radius:8px;min-width:47px;text-align:center;padding:9px 5px;font-weight:750;font-size:11px}
+  .tracker-episode.is-watched .tracker-episode-flag{background:#245349;border-color:#3f8a76;color:#ceffef}
+  .tracker-episode-detail{flex:1;min-width:0}
+  .tracker-episode-detail strong{display:block;font-size:13px;line-height:1.35;margin:0 0 4px;overflow-wrap:anywhere}
+  .tracker-episode-detail span{display:block;font-size:11px;color:#afb4c7;line-height:1.4}
+  .tracker-mark{flex:none;background:#2c2941;border:1px solid #5b507c;border-radius:9px;color:#e9dcff;font-size:11px;font-weight:800;padding:10px 8px;min-width:84px}
+  .tracker-mark[disabled]{opacity:.6;cursor:default}
+  .tracker-episode.is-watched .tracker-mark{background:#213e38;border-color:#4a8b72;color:#b1f5df}
+  .tracker-manual{border:1px solid #46465d;border-radius:14px;background:#171a29;padding:14px;margin:15px 0}
+  .tracker-manual h3{margin:0 0 6px;font-size:14px}.tracker-manual p{font-size:11px;color:#adb1c1;line-height:1.6;margin:0 0 12px}
+  .tracker-manual-fields{display:flex;align-items:end;flex-wrap:wrap;gap:8px}
+  .tracker-manual-fields label{font-size:10px;color:#c1bfd0;display:flex;flex-direction:column;gap:6px;flex:1;min-width:90px}
+  .tracker-manual-fields input{padding:11px 10px;border:1px solid #47475f;border-radius:9px;background:#111423;color:white;width:100%;min-width:0}
+  .tracker-help{font-size:11px;color:#aaadbe;line-height:1.6;margin:10px 0}
+  .tracker-matches{display:grid;gap:8px;margin:12px 0}.tracker-match{border:1px solid #44435a;border-radius:10px;background:#1f2133;color:#efeaf9;padding:12px;text-align:left;font-size:12px}
+  .tracker-match span{display:block;color:#b5b7c9;font-size:10px;margin-top:4px}
+  .tracker-divider{height:1px;background:#34394b;margin:12px 0}
+  .tracker-toolbar{display:flex;flex-wrap:wrap;gap:9px;align-items:center;justify-content:space-between}
+  .tracker-toolbar .smallbtn{font-size:11px}
+  .tracker-link{color:#c9b0ff;font-size:11px;font-weight:700}
+  #trackerFeedback{font-size:11px;line-height:1.55;color:#a9b1bf;margin:5px 0}
+  @media(max-width:1120px){.tracker-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:760px){.tracker-strip{align-items:stretch;flex-direction:column;padding:17px}.tracker-strip .btn{align-self:flex-start}.tracker-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tracker-show{padding:11px;gap:9px}.tracker-show-head{gap:8px}.tracker-small-poster{width:43px;height:65px}.tracker-show-name{font-size:12px}.tracker-sub{font-size:10px}.tracker-below{font-size:10px}.tracker-modal{padding:15px;max-height:90dvh}.tracker-head-detail h2{font-size:20px}.tracker-head-poster{width:54px;height:79px}.tracker-metric{padding:9px}.tracker-metric strong{font-size:16px}.tracker-mark{min-width:66px;padding:9px 7px}.tracker-episode{gap:7px;padding:9px}.tracker-episode-flag{min-width:43px}.tracker-episode-detail strong{font-size:12px}.tracker-episode-detail span{font-size:10px}}
+  @media(max-width:360px){.tracker-grid{grid-template-columns:1fr}.tracker-show-head{gap:12px}.tracker-small-poster{width:57px;height:80px}.tracker-top-actions .btn{font-size:12px}}
+
+  @media(max-width:760px){
+    .library-card{flex-wrap:wrap;min-width:0}
+    .library-card .media-tile{flex:0 0 auto}
+    .library-card .library-main{flex:1 1 calc(100% - 80px);min-width:0}
+    .library-card .status-select{flex:1 1 105px;max-width:180px}
+    .library-card .smallbtn{flex:0 0 auto}
+    .tracker-modal{min-width:0;width:100%;max-width:100%;overflow-x:hidden}
+    .tracker-controls,.tracker-manual-fields{max-width:100%;min-width:0}
+    .tracker-manual-fields .btn{flex:1 0 auto}
+    .tracker-head-detail{min-width:0}
+  }
+
+  #trackerSeasonActions[hidden], #catalogTrackTitle[hidden]{display:none}
   </style>
 </head>
 <body>
@@ -229,6 +304,7 @@
     <section><div class="section-head"><h2>Listen & unwind</h2><button class="linkbtn" data-go="discover" data-category="music">View all →</button></div><div id="homeMusic" class="service-grid"></div></section>
     <section><div class="section-head"><h2>Learn something new</h2><button class="linkbtn" data-go="discover" data-category="learn">View all →</button></div><div id="homeLearn" class="service-grid"></div></section>
     <section><div class="section-head"><h2>Your watchlist</h2><button class="linkbtn" data-go="library">Manage list →</button></div><div id="homeList"></div></section>
+    <section><div class="section-head"><h2>Continue watching TV</h2><button class="linkbtn" data-go="library">Track episodes →</button></div><p class="lead" style="font-size:12px;margin-bottom:13px">Your shows and episode progress, all in one place.</p><div id="homeTrackerCount" class="hint" aria-live="polite"></div><div class="tracker-grid" id="homeTrackerPreview"></div></section>
   </div>
   <div class="view" id="view-catalog">
     <div class="catalog-heading"><div><div class="eyebrow">THE ENTERTAINMENT DIRECTORY</div><h1>Movies & TV.</h1><p class="lead">Browse posters, explore genres and save what you want to watch. No subscription or server needed.</p></div><span class="catalog-hero-icon" aria-hidden="true"><svg class="icon"><use href="#i-film"/></svg></span></div>
@@ -249,7 +325,9 @@
   <div class="view" id="view-library">
     <h1>My Library</h1><p class="lead">Build a watchlist of movies, series, and everything you want to remember. Play compatible personal files from the Files app below.</p>
     <div class="section-head"><h2>My watchlist</h2><button class="btn primary" id="libraryAdd"><svg class="icon"><use href="#i-plus"/></svg>Add a title</button></div>
-    <div class="chips" id="statusChips"></div><div id="libraryList" class="library-list" style="margin-bottom:38px"></div>
+    <div class="chips" id="statusChips"></div><div id="libraryList" class="library-list" style="margin-bottom:25px"></div>
+    <div class="tracker-strip"><div><div class="tracker-kicker">NEW IN VERSION 3</div><h2>Season & episode tracker</h2><p>Track every episode, see how much you've watched and pick up where you left off. Your progress is private and saved on this device.</p></div><button class="btn primary" type="button" id="trackerJumpSection">My TV shows ↓</button></div>
+    <section id="tvTrackingSection"><div class="section-head"><h2>My tracked TV shows</h2><span class="hint" id="trackerShowCount">0 shows</span></div><div class="tracker-grid" id="trackerShowGrid"></div><p class="notice">Episode information is provided by <a href="https://www.tvmaze.com/api" target="_blank" rel="noopener noreferrer">TVmaze</a>. This is a personal watch tracker; it doesn't play shows or verify streaming availability.</p></section>
     <div class="section-head"><h2>Play files from this device</h2></div>
     <div class="info-panel"><strong>Private local playback.</strong> Choose audio or video files from Files or iCloud Drive. Files are played on your device, not uploaded anywhere. Browser-supported formats work best (such as MP4, MOV, MP3 and M4A).</div>
     <div class="tools-row"><label class="btn primary" for="filePicker"><svg class="icon"><use href="#i-plus"/></svg>Choose my files</label><input type="file" id="filePicker" accept="video/*,audio/*,.mp4,.mov,.m4v,.mp3,.m4a,.wav,.webm" multiple hidden><label for="subtitlePicker" class="btn ghost"><svg class="icon"><use href="#i-upload"/></svg>Add .vtt subtitles</label><input type="file" id="subtitlePicker" accept=".vtt,text/vtt" hidden></div>
@@ -260,11 +338,12 @@
   <div class="view" id="view-settings"><h1>Make it yours.</h1><p class="lead">No account or monthly payment. Your preferences are saved on this device.</p>
     <div class="setting-block"><h3>Move your list between devices</h3><p>Favorites and watchlist items do not sync automatically between iPhone and iPad. Export a backup to Files/iCloud Drive, then import it on your other device. Import replaces the existing saved list on that device.</p><div class="tools-row"><button class="btn primary" id="exportData"><svg class="icon"><use href="#i-download"/></svg>Export backup</button><label class="btn ghost" for="importData"><svg class="icon"><use href="#i-upload"/></svg>Import backup</label><input id="importData" type="file" accept="application/json,.json" hidden></div></div>
     <div class="setting-block"><h3>Install on your Home Screen</h3><p>After publishing this web app, open it in Safari → Share → Add to Home Screen → enable “Open as Web App” → Add. Repeat on your other device.</p></div>
+    <div class="setting-block"><h3>NEW: TV episode tracking</h3><p>Open Library → Season & episode tracker to mark episodes watched, track seasons, see a show's next unwatched episode, and set up seasons manually if offline. Your history is stored in this browser and included in your JSON backup. Metadata provided by <a href="https://www.tvmaze.com/api" target="_blank" rel="noopener noreferrer">TVmaze</a>.</p></div>
     <div class="setting-block"><h3>Movie & TV catalog</h3><p>Included picks work without live search. When online, TV show posters, genres and details come from <a href="https://www.tvmaze.com/api" target="_blank" rel="noopener noreferrer">TVmaze</a> (CC BY-SA), and film covers/search results come from <a href="https://en.wikipedia.org/" target="_blank" rel="noopener noreferrer">Wikipedia</a> (article licenses vary). Catalog searches are sent to these services, not to your own server. No streaming availability or price is implied.</p></div>
     <div class="setting-block"><h3>Jellyfin: coming in Step 2</h3><p>Once your Mac runs a Jellyfin server, we'll add access to your personal movies, series, music, and cover art across your home network.</p><a class="btn ghost" href="https://jellyfin.org/" target="_blank" rel="noopener noreferrer">About Jellyfin <svg class="icon"><use href="#i-arrow"/></svg></a></div>
-    <div class="setting-block"><h3>Privacy & saved information</h3><p>Only titles, favorite sources, recent links and playback positions are stored in this browser's local storage. Media stays on your device and is never sent to a server by this hub. Clearing Safari website data may erase your saved list. Back up before doing so.</p><button class="btn ghost" id="clearData"><svg class="icon"><use href="#i-trash"/></svg>Clear saved list</button></div>
+    <div class="setting-block"><h3>Privacy & saved information</h3><p>Watchlists, episode progress, favorite sources, recent links and playback positions are stored in this browser's local storage. Media stays on your device and is never sent to a server by this hub. Clearing Safari website data may erase your saved list. Back up before doing so.</p><button class="btn ghost" id="clearData"><svg class="icon"><use href="#i-trash"/></svg>Clear saved list</button></div>
   </div>
-  <div class="footer-note">MY ENTERTAINMENT HUB · PERSONAL V2 · MADE FOR IPHONE + IPAD</div>
+  <div class="footer-note">MY ENTERTAINMENT HUB · PERSONAL V3 · MADE FOR IPHONE + IPAD</div>
 </main>
 </div>
 <nav class="mobile-nav" aria-label="Mobile navigation"><button class="navbtn active" data-view="home"><svg class="icon"><use href="#i-home"/></svg>Home</button><button class="navbtn" data-view="discover"><svg class="icon"><use href="#i-compass"/></svg>Discover</button><button class="navbtn" data-view="catalog"><svg class="icon"><use href="#i-film"/></svg>Catalog</button><button class="navbtn" data-view="library"><svg class="icon"><use href="#i-library"/></svg>Library</button><button class="navbtn" data-view="favorites"><svg class="icon"><use href="#i-heart"/></svg>Saved</button><button class="navbtn" data-view="settings"><svg class="icon"><use href="#i-settings"/></svg>Settings</button></nav>
@@ -272,7 +351,22 @@
 <div class="modal-backdrop" id="catalogModal" role="presentation"><div class="modal catalog-modal" role="dialog" aria-modal="true" aria-labelledby="catalogModalTitle">
 <div class="modal-head"><span class="eyebrow">TITLE DETAILS</span><button class="circle-btn" id="closeCatalogModal" aria-label="Close title details"><svg class="icon"><use href="#i-close"/></svg></button></div>
 <div class="detail-hero"><div class="detail-art" id="catalogDetailArt"></div><div class="detail-text"><div class="detail-type" id="catalogDetailType"></div><h2 id="catalogModalTitle"></h2><p class="detail-sub" id="catalogDetailInfo"></p><div class="detail-tags" id="catalogDetailTags"></div></div></div>
-<p class="detail-synopsis" id="catalogDetailSummary"></p><div class="detail-actions"><button type="button" class="btn primary" id="catalogSaveTitle">＋ Add to watchlist</button><a class="btn ghost" id="catalogSourceLink" href="#" target="_blank" rel="noopener noreferrer">Title details ↗</a></div><div class="detail-edit" id="catalogEditArea" hidden><label for="catalogDetailStatus">Watchlist status</label><select class="status-select" id="catalogDetailStatus"><option value="plan">Want to watch</option><option value="active">In progress</option><option value="done">Finished</option></select><button id="catalogRemoveTitle" class="smallbtn" type="button">Remove from list</button></div><p class="notice" id="catalogDetailNotice">Information only — this hub does not host or stream copyrighted titles.</p>
+<p class="detail-synopsis" id="catalogDetailSummary"></p><div class="detail-actions"><button type="button" class="btn primary" id="catalogSaveTitle">＋ Add to watchlist</button><a class="btn ghost" id="catalogSourceLink" href="#" target="_blank" rel="noopener noreferrer">Title details ↗</a></div><div class="detail-edit" id="catalogEditArea" hidden><label for="catalogDetailStatus">Watchlist status</label><select class="status-select" id="catalogDetailStatus"><option value="plan">Want to watch</option><option value="active">In progress</option><option value="done">Finished</option></select><button id="catalogTrackTitle" class="smallbtn" type="button" hidden>Track episodes</button><button id="catalogRemoveTitle" class="smallbtn" type="button">Remove from list</button></div><p class="notice" id="catalogDetailNotice">Information only — this hub does not host or stream copyrighted titles.</p>
+</div></div>
+<div class="modal-backdrop" id="trackerModal" role="presentation"><div class="modal tracker-modal" role="dialog" aria-modal="true" aria-labelledby="trackerTitle">
+  <div class="modal-head"><span class="eyebrow">MY TV TRACKER · VERSION 3</span><button class="circle-btn" id="trackerClose" aria-label="Close TV tracker"><svg class="icon"><use href="#i-close"/></svg></button></div>
+  <div class="tracker-head"><img class="tracker-head-poster" id="trackerPoster" alt=""><div class="tracker-head-detail"><span class="tracker-kicker">SEASON BY SEASON</span><h2 id="trackerTitle">TV Show</h2><p id="trackerSubTitle">Private episode progress</p></div></div>
+  <div class="tracker-metrics"><div class="tracker-metric"><strong id="trackerWatchedCount">0</strong><small>Episodes watched</small></div><div class="tracker-metric"><strong id="trackerAvailableCount">0</strong><small>Aired episodes listed</small></div><div class="tracker-metric"><strong id="trackerProgressNumber">0%</strong><small>Watched progress</small></div></div>
+  <div class="tracker-progress" id="trackerProgressTrack" role="progressbar" aria-label="Overall watched progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="trackerProgressBar" style="width:0%"></span></div>
+  <div class="tracker-callout muted-callout" id="trackerNext">Connect a series to get started.</div>
+  <div class="tracker-top-actions"><button class="smallbtn" id="trackerJumpNext" type="button">Jump to next episode</button><button class="smallbtn" id="trackerReload" type="button">↻ Refresh episodes</button><a class="tracker-link" href="https://www.tvmaze.com/api" target="_blank" rel="noopener noreferrer">Episode data: TVmaze ↗</a></div>
+  <p id="trackerFeedback" aria-live="polite">Loading your show...</p><div class="tracker-matches" id="trackerMatches"></div>
+  <div class="tracker-controls" id="trackerSeasonActions"><label for="trackerSeasonSelect">Choose a season</label><select id="trackerSeasonSelect" aria-label="Choose season"></select><div class="tracker-toolbar"><button type="button" class="smallbtn" id="trackerMarkSeason">✓ Mark aired season watched</button><button type="button" class="smallbtn" id="trackerUnmarkSeason">Unmark season</button></div></div>
+  <h3 style="margin:14px 0 8px" id="trackerSeasonLabel">Season 1</h3><div id="trackerEpisodes" class="tracker-episodes" aria-live="polite"></div>
+  <div class="tracker-manual"><h3>Manual season setup</h3><p>If episode information isn't available or you'd rather track offline, enter the number of episodes in a season. This does not delete existing watched progress.</p>
+    <form id="trackerManualForm" class="tracker-manual-fields"><label>Season number<input id="trackerManualSeason" type="number" min="1" max="99" value="1" required inputmode="numeric"></label><label>Episode count<input id="trackerManualCount" type="number" min="1" max="250" value="10" required inputmode="numeric"></label><button class="btn primary" type="submit">Save season</button></form>
+    <p class="tracker-help">Progress is recorded by season and episode number. Upcoming episodes in TVmaze's listings can't be marked watched until their listed air date.</p>
+  </div>
 </div></div>
 <div class="toast" role="status" id="toast"></div>
 <script>
@@ -299,8 +393,24 @@ const SERVICES=[
 const labels={all:'All sources',watch:'Movies & TV',music:'Music & radio',podcasts:'Podcasts',learn:'Documentaries & learning'};
 const storeKey='my_entertainment_hub_v1';
 function cleanUrl(v){try{const u=new URL(String(v||''));return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}}
-function hydrate(){try{const raw=JSON.parse(localStorage.getItem(storeKey));if(!raw||typeof raw!=='object')return null;return {items:Array.isArray(raw.items)?raw.items.slice(0,500).filter(i=>i&&typeof i.title==='string').map(i=>({id:String(i.id||''),title:i.title.slice(0,120),type:String(i.type||'Other').slice(0,50),status:['plan','active','done'].includes(i.status)?i.status:'plan',notes:String(i.notes||'').slice(0,400),url:cleanUrl(i.url),catalogId:String(i.catalogId||'').slice(0,130),poster:cleanUrl(i.poster),year:String(i.year||'').slice(0,10),genres:Array.isArray(i.genres)?i.genres.slice(0,8).map(v=>String(v).slice(0,35)):[],summary:String(i.summary||'').slice(0,800),source:String(i.source||'').slice(0,40),sourceUrl:cleanUrl(i.sourceUrl)})):[],favorites:Array.isArray(raw.favorites)?raw.favorites.filter(id=>SERVICES.some(s=>s.id===id)):[],recent:Array.isArray(raw.recent)?raw.recent.filter(id=>SERVICES.some(s=>s.id===id)).slice(0,8):[],resume:(raw.resume&&typeof raw.resume==='object')?raw.resume:{}}}catch{return null}}
-let data=hydrate()||{items:[],favorites:[],recent:[],resume:{}};
+function cleanEpisodeProgress(raw){
+ const out={};if(!raw||typeof raw!=='object'||Array.isArray(raw))return out;
+ for(const [key,value] of Object.entries(raw).slice(0,500)){
+  if(!value||typeof value!=='object'||String(key).length>140)continue;
+  const watched={},manualSeasons={};
+  if(value.watched&&typeof value.watched==='object')for(const [ep,mark] of Object.entries(value.watched).slice(0,4000)){
+   if(/^s[1-9]\d{0,2}e[1-9]\d{0,3}$/.test(ep)&&mark)watched[ep]=typeof mark==='string'?mark.slice(0,45):true;
+  }
+  if(value.manualSeasons&&typeof value.manualSeasons==='object')for(const [s,c] of Object.entries(value.manualSeasons).slice(0,99)){
+   if(Number.isInteger(Number(s))&&Number(s)>=1&&Number(s)<=99&&Number.isInteger(Number(c))&&Number(c)>=1&&Number(c)<=250)manualSeasons[s]=Number(c);
+  }
+  const n=Number(value.showId);
+  out[String(key)]={showId:Number.isSafeInteger(n)&&n>0?n:0,watched,manualSeasons,lastWatched:String(value.lastWatched||'').slice(0,45),selectedSeason:Number.isInteger(Number(value.selectedSeason))?Math.min(99,Math.max(1,Number(value.selectedSeason))):1};
+ }
+ return out;
+}
+function hydrate(){try{const raw=JSON.parse(localStorage.getItem(storeKey));if(!raw||typeof raw!=='object')return null;return {items:Array.isArray(raw.items)?raw.items.slice(0,500).filter(i=>i&&typeof i.title==='string').map(i=>({id:String(i.id||''),title:i.title.slice(0,120),type:String(i.type||'Other').slice(0,50),status:['plan','active','done'].includes(i.status)?i.status:'plan',notes:String(i.notes||'').slice(0,400),url:cleanUrl(i.url),catalogId:String(i.catalogId||'').slice(0,130),poster:cleanUrl(i.poster),year:String(i.year||'').slice(0,10),genres:Array.isArray(i.genres)?i.genres.slice(0,8).map(v=>String(v).slice(0,35)):[],summary:String(i.summary||'').slice(0,800),source:String(i.source||'').slice(0,40),sourceUrl:cleanUrl(i.sourceUrl)})):[],favorites:Array.isArray(raw.favorites)?raw.favorites.filter(id=>SERVICES.some(s=>s.id===id)):[],recent:Array.isArray(raw.recent)?raw.recent.filter(id=>SERVICES.some(s=>s.id===id)).slice(0,8):[],resume:(raw.resume&&typeof raw.resume==='object')?raw.resume:{},episodeProgress:cleanEpisodeProgress(raw.episodeProgress)}}catch{return null}}
+let data=hydrate()||{items:[],favorites:[],recent:[],resume:{},episodeProgress:{}};
 let currentView='home',discoverCategory='all',listStatus='all',files=[],fileUrls=[],currentIndex=-1,subtitleUrl='',resumeTick=0,selectedVideo=false;
 function save(){try{localStorage.setItem(storeKey,JSON.stringify(data))}catch{notify('Browser storage full; export your list as a backup.')}}
 let toastTimer;function notify(s){const t=$('#toast');t.textContent=s;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),3000)}
@@ -336,9 +446,9 @@ $('#prevTrack').onclick=()=>{if(files.length)playFile((currentIndex-1+files.leng
 $('#nextTrack').onclick=()=>{if(files.length)playFile((currentIndex+1)%files.length,true)};
 $('#shuffleTrack').onclick=()=>{if(files.length)playFile(Math.floor(Math.random()*files.length),true)};
 ['#mediaPlayer','#audioPlayer'].forEach(q=>{const p=$(q);p.addEventListener('timeupdate',()=>{if(!files[currentIndex]||p.style.display==='none'||Date.now()-resumeTick<4000)return;resumeTick=Date.now();data.resume[mediaKey(files[currentIndex])]=Math.floor(p.currentTime);save()});p.addEventListener('ended',()=>{if(files.length>1)playFile((currentIndex+1)%files.length,true)})});
-$('#exportData').onclick=()=>{const blob=new Blob([JSON.stringify({version:1,exported:new Date().toISOString(),items:data.items,favorites:data.favorites,recent:data.recent,resume:data.resume},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='my-entertainment-hub-backup.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);notify('Backup prepared. Save it to Files/iCloud Drive.')};
+$('#exportData').onclick=()=>{const blob=new Blob([JSON.stringify({version:3,exported:new Date().toISOString(),items:data.items,favorites:data.favorites,recent:data.recent,resume:data.resume,episodeProgress:data.episodeProgress||{}},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='my-entertainment-hub-backup.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);notify('Backup prepared. Save it to Files/iCloud Drive.')};
 $('#importData').addEventListener('change',async e=>{const f=e.target.files&&e.target.files[0];if(!f)return;try{if(f.size>1500000)throw new Error('Backup file too large');const value=JSON.parse(await f.text());if(!Array.isArray(value.items)||!Array.isArray(value.favorites))throw new Error('Not a valid Hub backup');if(!confirm('Replace this device’s saved watchlist and favorites with the backup?'))return;localStorage.setItem(storeKey,JSON.stringify(value));data=hydrate()||data;save();refresh();notify('Backup imported successfully')}catch(err){notify('Could not import: '+err.message)}e.target.value=''});
-$('#clearData').onclick=()=>{if(confirm('Clear your watchlist, favorites and recent history on this device? This cannot be undone.')){data={items:[],favorites:[],recent:[],resume:{}};save();refresh();notify('Saved data cleared')}};
+$('#clearData').onclick=()=>{if(confirm('Clear your watchlist, favorites and recent history on this device? This cannot be undone.')){data={items:[],favorites:[],recent:[],resume:{},episodeProgress:{}};save();refresh();notify('Saved data cleared')}};
 
 // Movie & TV Catalog — curated offline picks, live searches from TVmaze and Wikipedia.
 // Original V1 localStorage key is deliberately unchanged to keep existing watchlists.
@@ -421,6 +531,191 @@ $('#clearCatalogSearch').onclick=()=>{$('#catalogSearch').value='';catalogQuery=
 // Load remote posters only when user opens the catalog; no extra setup required.
 const priorNav=navigate;navigate=function(to,cat){priorNav(to,cat);if(to==='catalog')hydrateCatalogSeeds()};
 if(location.hash==='#catalog')hydrateCatalogSeeds();
+
+/* V3 Advanced TV Tracking — local-first. TVmaze episode lists are optional metadata, not streaming links. */
+const TRACKER_CACHE_KEY='my_entertainment_hub_episode_cache_v3';
+let trackerCache={};
+try{const raw=JSON.parse(localStorage.getItem(TRACKER_CACHE_KEY)||'{}');if(raw&&typeof raw==='object'&&!Array.isArray(raw))trackerCache=raw}catch{}
+let trackedItemId='',trackerSeason=1,trackerEpisodes=[],trackerBusy=false,trackerRequest=0,trackerUseManual=false;
+
+function safeTrackerState(itemId){
+ if(!data.episodeProgress||typeof data.episodeProgress!=='object')data.episodeProgress={};
+ if(!data.episodeProgress[itemId])data.episodeProgress[itemId]={showId:0,watched:{},manualSeasons:{},lastWatched:''};
+ return data.episodeProgress[itemId];
+}
+function trackerWatchedKey(ep){return 's'+ep.season+'e'+ep.number}
+function trackerIsWatched(item,ep){return !!data.episodeProgress?.[item.id]?.watched?.[trackerWatchedKey(ep)]}
+function todayLocal(){const d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')}
+function isAvailableEp(ep){return !ep.airdate||ep.airdate<=todayLocal()}
+function trackerSummary(item,episodes){
+ const available=episodes.filter(isAvailableEp);
+ const watched=available.filter(ep=>trackerIsWatched(item,ep)).length;
+ const next=available.find(ep=>!trackerIsWatched(item,ep))||null;
+ return {watched,total:available.length,next,percent:available.length?Math.min(100,Math.round(100*watched/available.length)):0};
+}
+function trackerReadCache(showId){const record=trackerCache[showId];return record&&Array.isArray(record.episodes)?record.episodes:[]}
+function trackerWriteCache(showId,eps){
+ trackerCache[showId]={savedAt:Date.now(),episodes:eps.slice(0,2500)};
+ try{let keys=Object.keys(trackerCache).sort((a,b)=>(trackerCache[a]?.savedAt||0)-(trackerCache[b]?.savedAt||0));
+ while(keys.length>12){const oldest=keys.shift();delete trackerCache[oldest]}
+ localStorage.setItem(TRACKER_CACHE_KEY,JSON.stringify(trackerCache))}catch{/* watched progress is stored separately and remains safe */}
+}
+function parseShowId(item){
+ const state=data.episodeProgress?.[item.id];if(Number.isSafeInteger(Number(state?.showId))&&Number(state?.showId)>0)return Number(state.showId);
+ const match=String(item.catalogId||'').match(/^tvmaze:(\d+)$/)||String(item.sourceUrl||'').match(/tvmaze\.com\/shows\/(\d+)/);
+ if(match)return Number(match[1]);
+ const seed=CATALOG_SEEDS.find(s=>s.id===item.catalogId);
+ const seedMatch=String(seed?.sourceUrl||'').match(/tvmaze\.com\/shows\/(\d+)/);
+ return seedMatch?Number(seedMatch[1]):0;
+}
+function manualEpisodesFor(item){
+ const seasons=data.episodeProgress?.[item.id]?.manualSeasons||{};
+ const result=[];
+ Object.entries(seasons).forEach(([season,count])=>{
+  const n=Number(season),max=Number(count);if(!Number.isInteger(n)||n<1||n>99||!Number.isInteger(max)||max<1||max>250)return;
+  for(let i=1;i<=max;i++)result.push({season:n,number:i,name:'Episode '+i,airdate:'',manual:true});
+ });
+ return result.sort((a,b)=>a.season-b.season||a.number-b.number);
+}
+function trackerPreviewData(item){const state=data.episodeProgress?.[item.id];const id=Number(state?.showId)||parseShowId(item);let eps=trackerReadCache(id);if(!eps.length)eps=manualEpisodesFor(item);return {eps,summary:trackerSummary(item,eps)};}
+function trackerCard(item){
+ const {eps,summary}=trackerPreviewData(item);
+ const card=el('article','tracker-show');const head=el('div','tracker-show-head');
+ const art=el('img','tracker-small-poster');art.alt='';if(item.poster)art.src=item.poster;else art.style.opacity='.55';
+ const info=el('div','');info.style.minWidth='0';info.append(el('h3','tracker-show-name',item.title),el('p','tracker-sub',item.year?'TV series · '+item.year:'TV series'));
+ head.append(art,info);
+ const bar=el('div','tracker-progress');bar.setAttribute('role','progressbar');bar.setAttribute('aria-label','Watched progress for '+item.title);bar.setAttribute('aria-valuenow',String(summary.percent));bar.setAttribute('aria-valuemin','0');bar.setAttribute('aria-valuemax','100');const fill=el('span');fill.style.width=summary.percent+'%';bar.append(fill);
+ const below=el('div','tracker-below');below.append(el('span','',eps.length?summary.watched+' of '+summary.total+' aired watched':'Season setup needed'),el('strong','',eps.length?summary.percent+'%':'NEW'));
+ const next=el('p','tracker-sub',summary.next?'Next: S'+summary.next.season+' E'+summary.next.number+' · '+summary.next.name:eps.length?'All available episodes watched':'Set up seasons and episodes');
+ const b=el('button','tracker-card-button',eps.length?'Manage episodes →':'Start tracking →');b.type='button';b.onclick=()=>openTracker(item.id);
+ card.append(head,bar,below,next,b);return card;
+}
+function renderTrackingOverview(){
+ const area=$('#trackerShowGrid'),count=$('#trackerShowCount');if(!area)return;
+ const shows=data.items.filter(i=>i.type==='TV Show');count.textContent=shows.length+' '+(shows.length===1?'show':'shows');area.replaceChildren();
+ if(!shows.length){const prompt=el('div','tracker-empty');prompt.append(el('strong','','No TV shows on your watchlist yet'),el('p','','Find a series in Catalog and add it to your watchlist. Then return here to track every season and episode.'));
+ const b=el('button','btn primary','Explore TV shows');b.onclick=()=>{catalogType='TV Shows';navigate('catalog')};prompt.append(b);area.append(prompt);return}
+ shows.slice().reverse().forEach(i=>area.append(trackerCard(i)));
+}
+function renderTrackerHome(){
+ const grid=$('#homeTrackerPreview'),count=$('#homeTrackerCount');if(!grid)return;
+ const shows=data.items.filter(i=>i.type==='TV Show').slice().reverse().slice(0,3);count.textContent=shows.length?shows.length+' shows':'No shows added';grid.replaceChildren();
+ if(!shows.length){const x=emptyCard('Pick your first series','Add a series from Catalog to start tracking seasons, episodes and watched progress.','Explore TV shows',()=>{catalogType='TV Shows';navigate('catalog')});grid.append(x);return}
+ grid.append(...shows.map(trackerCard));
+}
+function addTrackerButtonToCard(row,item){
+ if(item.type!=='TV Show')return;
+ const b=el('button','smallbtn tv-card-cta','Episodes');b.type='button';b.title='Track seasons and episodes for '+item.title;b.onclick=()=>openTracker(item.id);
+ const del=row.querySelector('button[aria-label^="Remove "]');if(del)row.insertBefore(b,del);else row.append(b);
+ const summary=trackerPreviewData(item).summary;
+ if(summary.total){const label=el('p','tracker-sub',summary.watched+' / '+summary.total+' aired episodes watched');const main=row.querySelector('.library-main');if(main)main.append(label)}
+}
+function getTrackerItem(){return data.items.find(i=>i.id===trackedItemId&&i.type==='TV Show')||null}
+function trackerSetFeedback(message){$('#trackerFeedback').textContent=message}
+function trackerControlRefresh(){const i=getTrackerItem();if(!i)return;$('#trackerTitle').textContent=i.title;$('#trackerPoster').src=i.poster||'';$('#trackerPoster').alt=i.poster?'Poster for '+i.title:'';$('#trackerSubTitle').textContent='Your season-by-season watch history · saved on this device';}
+function trackerModalVisible(){return $('#trackerModal').classList.contains('open')}
+function closeTracker(){trackedItemId='';trackerRequest++;trackerBusy=false;$('#trackerModal').classList.remove('open');document.body.style.overflow=''}
+function openTracker(itemId){
+ const item=data.items.find(i=>i.id===itemId);if(!item||item.type!=='TV Show')return;
+ closeCatalogDetails();trackedItemId=itemId;trackerRequest++;trackerBusy=false;trackerUseManual=false;
+ const state=safeTrackerState(itemId);const showId=Number(state.showId)||parseShowId(item);if(showId&&!state.showId){state.showId=showId;save()}
+ trackerEpisodes=trackerReadCache(showId);if(!trackerEpisodes.length)trackerEpisodes=manualEpisodesFor(item);
+ trackerSeason=Number(state.selectedSeason)||trackerEpisodes[0]?.season||1;
+ $('#trackerModal').classList.add('open');document.body.style.overflow='hidden';trackerControlRefresh();$('#trackerMatches').replaceChildren();trackerSetFeedback(trackerEpisodes.length?'Saved episode information loaded.':'Looking up this series…');trackerRender();$('#trackerClose').focus();
+ if(showId){if(!trackerReadCache(showId).length){trackerFetchEpisodes(showId)}else{const record=trackerCache[showId];if(Date.now()-Number(record?.savedAt||0)>12*3600*1000)trackerFetchEpisodes(showId,true)}}
+ else trackerFindShow();
+}
+async function trackerFindShow(){
+ const item=getTrackerItem();if(!item)return;const token=++trackerRequest;
+ trackerBusy=true;trackerSetFeedback('Searching TVmaze for the right series…');$('#trackerMatches').replaceChildren();
+ try{
+  const r=await fetch('https://api.tvmaze.com/search/shows?q='+encodeURIComponent(item.title));
+  if(!r.ok)throw new Error('Search unavailable');const matches=(await r.json()).map(x=>x.show).filter(s=>s&&s.id).slice(0,8);
+  if(token!==trackerRequest||!getTrackerItem())return;
+  const exact=matches.filter(s=>normalizeName(s.name)===normalizeName(item.title));
+  const year=String(item.year||'');const best=exact.length===1?exact[0]:exact.length>1&&year?exact.find(s=>(s.premiered||'').startsWith(year)):null;
+  if(best){trackerChooseShow(best.id);return}
+  const target=$('#trackerMatches');target.replaceChildren();
+  if(!matches.length){trackerSetFeedback('No matching TV show found. You can set up episodes manually below.');return}
+  const hint=el('p','tracker-help','Choose the correct show to load official season and episode information:');target.append(hint);
+  for(const show of matches){const b=el('button','tracker-match',show.name);b.type='button';b.append(el('span','',(show.premiered?.slice(0,4)||'Year unavailable')+' · '+(show.network?.name||show.webChannel?.name||'TV series')));b.onclick=()=>trackerChooseShow(show.id);target.append(b)}
+  trackerSetFeedback('Select a match above, or use manual season counts below.');
+ }catch{if(token!==trackerRequest||!getTrackerItem())return;trackerSetFeedback('Can’t connect to TVmaze right now. Your saved watched episodes still work; you can enter seasons manually.')}finally{if(token===trackerRequest)trackerBusy=false}
+}
+function trackerChooseShow(showId){
+ const item=getTrackerItem();if(!item)return;const state=safeTrackerState(item.id);state.showId=Number(showId);save();$('#trackerMatches').replaceChildren();trackerFetchEpisodes(Number(showId));
+}
+async function trackerFetchEpisodes(showId,quiet=false){
+ const item=getTrackerItem();if(!item)return;const token=++trackerRequest;
+ trackerBusy=true;if(!quiet)trackerSetFeedback('Loading episode names and air dates from TVmaze…');
+ try{
+  const r=await fetch('https://api.tvmaze.com/shows/'+showId+'/episodes');if(!r.ok)throw new Error(r.status===429?'Rate limit':'Episode list unavailable');
+  const rows=await r.json();if(token!==trackerRequest||!getTrackerItem())return;
+  const clean=rows.filter(e=>Number.isInteger(e.season)&&e.season>0&&Number.isInteger(e.number)&&e.number>0).map(e=>({season:e.season,number:e.number,name:String(e.name||'Episode '+e.number).slice(0,140),airdate:/^\d{4}-\d{2}-\d{2}$/.test(e.airdate||'')?e.airdate:'',runtime:Number(e.runtime)||0})).sort((a,b)=>a.season-b.season||a.number-b.number);
+  trackerWriteCache(showId,clean);trackerEpisodes=clean.length?clean:manualEpisodesFor(item);
+  if(trackerEpisodes.length&&!trackerEpisodes.some(e=>e.season===trackerSeason))trackerSeason=trackerEpisodes[0].season;
+  trackerSetFeedback(clean.length?'Season and episode data from TVmaze · Tap any episode to update your progress.':'No numbered episodes are listed yet. You can enter seasons manually.');trackerRender();
+ }catch(err){if(token!==trackerRequest||!getTrackerItem())return;trackerSetFeedback('Episode information unavailable'+(err?.message==='Rate limit'?' due to rate limits':'')+'. You can keep tracking with manually entered season counts.');if(!trackerEpisodes.length)trackerEpisodes=manualEpisodesFor(item);trackerRender()}
+ finally{if(token===trackerRequest)trackerBusy=false}
+}
+function trackerSetSeason(n){trackerSeason=Number(n);const item=getTrackerItem();if(!item)return;safeTrackerState(item.id).selectedSeason=trackerSeason;save();trackerRender()}
+function trackerToggleEpisode(ep){const item=getTrackerItem();if(!item||!isAvailableEp(ep))return;const state=safeTrackerState(item.id),key=trackerWatchedKey(ep);
+ if(state.watched[key])delete state.watched[key];else{state.watched[key]=new Date().toISOString();state.lastWatched=state.watched[key];if(item.status==='plan')item.status='active'}
+ save();trackerRender();renderTrackingOverview();renderTrackerHome();renderLibrary();renderHome();renderCatalog();
+}
+function trackerMarkSeason(mark){const item=getTrackerItem();if(!item)return;const eps=trackerEpisodes.filter(e=>e.season===trackerSeason&&isAvailableEp(e));if(!eps.length){notify('No available episodes in this season');return}
+ const state=safeTrackerState(item.id);const stamp=new Date().toISOString();for(const ep of eps){const key=trackerWatchedKey(ep);if(mark)state.watched[key]=state.watched[key]||stamp;else delete state.watched[key]}
+ if(mark){state.lastWatched=stamp;if(item.status==='plan')item.status='active'}save();trackerRender();refresh();notify(mark?'Season marked as watched':'Season marked as unwatched');
+}
+function trackerJumpNext(){const item=getTrackerItem();if(!item)return;const ep=trackerSummary(item,trackerEpisodes).next;if(!ep){notify('No unwatched available episodes');return}trackerSeason=ep.season;safeTrackerState(item.id).selectedSeason=ep.season;save();trackerRender();const node=$('#trackerEpisodes').querySelector('[data-ep="'+trackerWatchedKey(ep)+'"]');if(node)node.scrollIntoView({behavior:'smooth',block:'center'});}
+function trackerRender(){
+ const item=getTrackerItem();if(!item)return;trackerControlRefresh();
+ if(!trackerEpisodes.length)trackerEpisodes=manualEpisodesFor(item);
+ const seasons=[...new Set(trackerEpisodes.map(e=>e.season))].sort((a,b)=>a-b);
+ if(seasons.length&&!seasons.includes(trackerSeason))trackerSeason=seasons[0];
+ const stat=trackerSummary(item,trackerEpisodes);const total=trackerEpisodes.length;
+ $('#trackerWatchedCount').textContent=String(stat.watched);$('#trackerAvailableCount').textContent=String(stat.total);$('#trackerProgressNumber').textContent=stat.percent+'%';
+ $('#trackerProgressBar').style.width=stat.percent+'%';$('#trackerProgressTrack').setAttribute('aria-valuenow',String(stat.percent));
+ const next=$('#trackerNext');if(stat.next){next.textContent='Up next: Season '+stat.next.season+', Episode '+stat.next.number+' — '+stat.next.name;next.className='tracker-callout';}
+ else if(total){next.textContent='You’re caught up with the episodes currently listed as available.';next.className='tracker-callout'}
+ else{next.textContent='Start by connecting a show or entering season counts manually. Your watched progress will be saved on this device.';next.className='tracker-callout muted-callout'}
+ const sel=$('#trackerSeasonSelect');sel.replaceChildren();for(const s of seasons){const op=el('option','', 'Season '+s);op.value=String(s);sel.append(op)}
+ sel.disabled=!seasons.length;sel.value=String(trackerSeason);$('#trackerSeasonActions').hidden=!seasons.length;
+ $('#trackerSeasonLabel').textContent=seasons.length?'Season '+trackerSeason:'No seasons yet';
+ const grid=$('#trackerEpisodes');grid.replaceChildren();
+ const eps=trackerEpisodes.filter(e=>e.season===trackerSeason);if(!eps.length){grid.append(emptyCard('No episodes added','We will pull the episode list online, or you can add the number of episodes in a season manually.'));return}
+ eps.forEach(ep=>{
+  const watched=trackerIsWatched(item,ep),future=!isAvailableEp(ep);
+  const card=el('article','tracker-episode'+(watched?' is-watched':'')+(future?' is-upcoming':''));card.dataset.ep=trackerWatchedKey(ep);
+  const flag=el('div','tracker-episode-flag',watched?'✓':'E'+String(ep.number).padStart(2,'0'));
+  const body=el('div','tracker-episode-detail');body.append(el('strong','',ep.name),el('span','',ep.manual?'S'+ep.season+' E'+ep.number+' · Manually added':'S'+ep.season+' E'+ep.number+(ep.airdate?' · '+ep.airdate:'')+(ep.runtime?' · '+ep.runtime+' min':'')));
+  const b=el('button','tracker-mark',future?'Upcoming':watched?'✓ Watched':'Mark watched');b.type='button';b.disabled=future;b.setAttribute('aria-pressed',String(watched));b.setAttribute('aria-label',(watched?'Mark as unwatched: ':'Mark as watched: ')+item.title+' season '+ep.season+' episode '+ep.number);b.onclick=()=>trackerToggleEpisode(ep);
+  card.append(flag,body,b);grid.append(card)
+ });
+}
+$('#trackerClose').onclick=closeTracker;
+$('#trackerModal').addEventListener('click',e=>{if(e.target===$('#trackerModal'))closeTracker()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&trackerModalVisible())closeTracker()});
+$('#trackerSeasonSelect').addEventListener('change',e=>trackerSetSeason(e.target.value));
+$('#trackerMarkSeason').onclick=()=>trackerMarkSeason(true);
+$('#trackerUnmarkSeason').onclick=()=>{if(confirm('Mark every episode in this season as unwatched?'))trackerMarkSeason(false)};
+$('#trackerJumpNext').onclick=trackerJumpNext;
+$('#trackerReload').onclick=()=>{const item=getTrackerItem();if(!item)return;const id=safeTrackerState(item.id).showId||parseShowId(item);if(id)trackerFetchEpisodes(Number(id));else trackerFindShow()};
+$('#trackerManualForm').addEventListener('submit',e=>{e.preventDefault();const item=getTrackerItem();if(!item)return;const s=Number($('#trackerManualSeason').value),count=Number($('#trackerManualCount').value);
+ if(!Number.isInteger(s)||s<1||s>99||!Number.isInteger(count)||count<1||count>250){notify('Use season 1–99 and 1–250 episodes');return}
+ const st=safeTrackerState(item.id);const prev=Number(st.manualSeasons[s]||0);
+ if(prev>count&&Object.keys(st.watched||{}).some(key=>{const m=key.match(/^s(\d+)e(\d+)$/);return m&&Number(m[1])===s&&Number(m[2])>count})){notify('This would hide watched episodes. Choose an equal or larger count.');return}
+ st.manualSeasons[s]=count;save();trackerUseManual=true;trackerEpisodes=manualEpisodesFor(item);trackerSeason=s;trackerSetFeedback('Manual season saved. Your watch history is preserved and included in backups.');trackerRender();refresh();notify('Season '+s+' set to '+count+' episodes');
+});
+$('#catalogTrackTitle').addEventListener('click',()=>{const i=catalogItemSaved(catalogActiveTitle);if(i){closeCatalogDetails();openTracker(i.id)}});
+
+// Extend V2's existing screens rather than replacing any features.
+const originalRenderHome=renderHome;renderHome=function(){originalRenderHome();renderTrackerHome()};
+const originalRenderLibrary=renderLibrary;renderLibrary=function(){originalRenderLibrary();renderTrackingOverview();for(const row of $$('#libraryList .library-card')){const name=row.querySelector('.library-main > strong')?.textContent;const item=data.items.find(i=>i.title===name&&i.type==='TV Show');if(item&&!row.querySelector('.tv-card-cta'))addTrackerButtonToCard(row,item)}};
+const originalItemCard=itemCard;itemCard=function(i){const row=originalItemCard(i);addTrackerButtonToCard(row,i);return row};
+const originalUpdateCatalogDetailActions=updateCatalogDetailActions;updateCatalogDetailActions=function(){originalUpdateCatalogDetailActions();const i=catalogActiveTitle?catalogItemSaved(catalogActiveTitle):null;$('#catalogTrackTitle').hidden=!(i&&i.type==='TV Show')};
+
+$('#trackerJumpSection').onclick=()=>$('#tvTrackingSection').scrollIntoView({behavior:'smooth',block:'start'});
 
 // Single-file edition: no service worker; use full package for offline shell.
 const start=location.hash.replace('#','');refresh();if(['home','discover','catalog','library','favorites','settings'].includes(start))navigate(start);
