@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0c15">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="My Hub">
+  <meta name="description" content="A free personal entertainment dashboard for iPhone and iPad. Save titles, discover legal free services, and play your own files.">
+  <link rel="apple-touch-icon" href="data:image/png;base64,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">
+  <title>My Entertainment Hub</title>
+  <style>
+  :root{color-scheme:dark;--bg:#090b13;--surface:#121521;--card:#171b29;--line:#292e40;--muted:#9b9eb0;--text:#f8f8ff;--violet:#b99aff;--teal:#73e5d3;--radius:22px;--shadow:0 18px 45px #03040b55}
+  *,*::before,*::after{box-sizing:border-box}
+  html{background:var(--bg);scroll-behavior:smooth}
+  body{margin:0;background:radial-gradient(ellipse 80% 40% at 65% -10%,#2a1c4444,transparent),var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);font-size:15px;min-height:100dvh}
+  button,input,select,textarea{font:inherit}
+  button{cursor:pointer}
+  a{color:inherit}
+  button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+  .icon{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+  .shell{display:flex;max-width:1650px;min-height:100dvh;margin:auto}
+  .sidebar{width:236px;padding:31px 16px;position:sticky;top:0;height:100dvh;display:flex;flex-direction:column;border-right:1px solid #ffffff0d}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;padding:0 10px;margin-bottom:43px}
+  .brand-logo{width:40px;height:40px;background:linear-gradient(145deg,#d1a2ff,#7869ed 58%,#69e2d0);border-radius:14px;display:grid;place-items:center;box-shadow:0 8px 24px #8867fe55}
+  .brand-logo .icon{width:24px;height:24px;stroke:#ffffff;stroke-width:2.3}
+  .brand strong{font-size:15px;letter-spacing:-.5px;line-height:1.25}
+  .brand small{font-size:11px;font-weight:500;color:var(--muted)}
+  .navlist{display:flex;flex-direction:column;gap:7px}
+  .navbtn{width:100%;display:flex;align-items:center;gap:14px;padding:14px;border:0;background:transparent;color:#a9aabb;border-radius:14px;text-align:left;font-weight:600}
+  .navbtn.active{background:#27213d;color:#e6dcff}
+  .navbtn.active .icon{color:var(--violet)}
+  .navbtn:hover:not(.active){background:#1b1e2b;color:#fff}
+  .side-footer{margin-top:auto;border:1px solid var(--line);border-radius:17px;padding:16px;background:#151825}
+  .side-footer .icon{color:var(--teal)}
+  .side-footer strong{display:block;margin:9px 0 4px;font-size:13px}
+  .side-footer p{font-size:12px;line-height:1.5;color:var(--muted);margin:0}
+  .content{width:calc(100% - 236px);min-width:0;padding:34px 46px 70px}
+  .topline{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:30px}
+  .greeting{font-size:13px;color:#aeb0c0;font-weight:600;letter-spacing:.02em}
+  .top-actions{display:flex;gap:10px;align-items:center}
+  .circle-btn{border:1px solid var(--line);border-radius:50%;background:#171926;color:#e3e4f0;width:41px;height:41px;display:grid;place-items:center}
+  .pill-status{border:1px solid #445456;border-radius:99px;background:#152727;color:#a9ebdb;display:flex;align-items:center;gap:7px;padding:9px 12px;font-size:11px;font-weight:700;white-space:nowrap}
+  .dot{background:#81e3bd;border-radius:50%;width:7px;height:7px;display:inline-block}
+  h1,h2,h3,p{margin-top:0}
+  h1{font-size:clamp(27px,3.6vw,39px);letter-spacing:-1.3px;line-height:1.1;margin-bottom:10px}
+  h2{font-size:20px;letter-spacing:-.5px}
+  .lead{color:#aeb0c0;line-height:1.55;font-size:14px;max-width:700px}
+  .hero{border:1px solid #78628a61;border-radius:26px;background:radial-gradient(circle at 83% 42%,#ba85ff4d 0%,transparent 29%),linear-gradient(111deg,#2a234b,#151b32 57%,#121827);min-height:247px;display:flex;align-items:center;position:relative;overflow:hidden;box-shadow:var(--shadow);margin-bottom:32px}
+  .hero-text{position:relative;z-index:2;padding:30px 34px;max-width:670px}
+  .eyebrow{font-size:11px;font-weight:800;letter-spacing:2px;color:#bfc6ff;text-transform:uppercase;margin-bottom:15px}
+  .hero h1{font-size:clamp(31px,4.5vw,47px);margin-bottom:11px}
+  .hero p{font-size:14px;color:#d0cee0;max-width:425px;line-height:1.65}
+  .orb{position:absolute;border:1px solid #cfadff44;aspect-ratio:1;border-radius:50%;right:-83px;top:-112px;width:420px;box-shadow:0 0 70px #8c69da22 inset}
+  .orb:before,.orb:after{content:"";position:absolute;border:1px solid #cfadff4a;aspect-ratio:1;border-radius:50%;inset:37px}
+  .orb:after{inset:89px;background:radial-gradient(circle at 34% 25%,#b68afecc,#4d4278 60%,#15182b);box-shadow:0 20px 55px #120c3b88}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:21px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:12px;border:1px solid #434253;background:#282c3a;color:#fff;font-size:13px;font-weight:750;padding:12px 16px;text-decoration:none;min-height:44px}
+  .btn.primary{background:#c8adff;color:#161226;border-color:#c8adff}
+  .btn.ghost{background:#ffffff12;border-color:#ffffff30}
+  .btn:hover{filter:brightness(1.09)}
+  .btn .icon{width:17px;height:17px}
+  .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-bottom:30px}
+  .stat{border:1px solid #292d3d;background:#131722;border-radius:16px;padding:17px 20px;display:flex;gap:13px;align-items:center}
+  .stat-icon{width:40px;height:40px;border-radius:13px;background:#262340;display:grid;place-items:center;color:#c8adff}
+  .stat strong{display:block;font-size:23px;font-weight:800;letter-spacing:-.5px}
+  .stat small{font-size:12px;color:#a6a9ba}
+  section{margin:0 0 35px}
+  .section-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:16px}
+  .section-head h2{margin:0}
+  .section-head .hint{font-size:12px;color:#979aaa}
+  .linkbtn{color:#c6b2ff;background:transparent;border:0;padding:8px;font-weight:700;font-size:12px;white-space:nowrap}
+  .chips{display:flex;gap:8px;overflow-x:auto;padding:2px 1px 16px;scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{background:#171a27;border:1px solid #303244;color:#aaaec1;white-space:nowrap;padding:9px 14px;border-radius:99px;font-size:12px;font-weight:700}
+  .chip.selected{background:#c5aafa;border-color:#c5aafa;color:#161225}
+  .service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+  .service-card{min-width:0;border:1px solid #34374b;background:#171a29;border-radius:19px;overflow:hidden;position:relative;transition:transform .15s,border-color .15s}
+  .service-card:hover{transform:translateY(-2px);border-color:#726c9a}
+  .service-cover{height:126px;display:flex;flex-direction:column;justify-content:space-between;padding:17px;position:relative;overflow:hidden}
+  .service-cover:after{content:"";position:absolute;right:-27px;top:-25px;height:150px;width:150px;border:1px solid #ffffff44;border-radius:50%;box-shadow:0 0 0 33px #ffffff0a,0 0 0 64px #ffffff08;pointer-events:none}
+  .service-mark{font-size:28px;font-weight:850;letter-spacing:-1.7px;max-width:100%;position:relative;z-index:1;line-height:1.1}
+  .service-type{font-size:10px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:#ffffffde;position:relative;z-index:1}
+  .service-body{padding:15px}
+  .service-body h3{font-size:14px;margin:0 0 6px}
+  .service-body p{font-size:11.5px;color:#abb0bd;line-height:1.45;min-height:47px;margin:0 0 12px}
+  .card-actions{display:flex;align-items:center;gap:8px}
+  .open-service{flex:1;text-align:center;border:1px solid #45465a;border-radius:10px;text-decoration:none;padding:9px;background:#282b3b;font-size:12px;font-weight:700}
+  .favorite{display:grid;place-items:center;border:1px solid #43465b;background:#252838;border-radius:10px;color:#b8bad0;width:36px;height:36px}
+  .favorite.selected{color:#ffd4df;border-color:#88556f;background:#493044}
+  .favorite.selected .icon{fill:#fb8eaf33}
+  .searchbox{height:52px;border:1px solid #34364a;background:#171926;border-radius:14px;display:flex;align-items:center;padding:0 15px;gap:10px;margin:0 0 20px;color:#a5aabe}
+  .searchbox input{border:0;outline:0;background:transparent;color:#fff;flex:1;min-width:0;font-size:14px}
+  .searchbox input::placeholder{color:#84899c}
+  .empty{background:#161a26;border:1px dashed #414658;border-radius:18px;padding:36px 22px;text-align:center;color:#b8b9c9}
+  .empty .icon{width:38px;height:38px;color:#a48af3;margin-bottom:10px}
+  .empty strong{display:block;color:#fff;margin-bottom:8px;font-size:16px}
+  .empty p{font-size:13px;line-height:1.5;max-width:360px;margin:0 auto 16px}
+  .library-list{display:grid;gap:10px}
+  .library-card{background:#161a26;border:1px solid #32374a;border-radius:14px;padding:13px 15px;display:flex;align-items:center;gap:13px}
+  .media-tile{width:48px;height:60px;flex:none;display:grid;place-items:center;color:#cdb8ff;background:linear-gradient(145deg,#413657,#24364f);border-radius:9px}
+  .library-main{min-width:0;flex:1}
+  .library-main strong{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px}
+  .library-main p{margin:3px 0 0;color:#9da4b6;font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .smallbtn{border:1px solid #3e4356;background:#272b3a;border-radius:9px;color:#e8e6f8;padding:8px 10px;font-size:11px;font-weight:650}
+  .status-select{border:1px solid #394257;border-radius:9px;padding:8px 4px;color:#e6e5f3;background:#242838;max-width:107px;font-size:11px}
+  .tools-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:17px}
+  .info-panel{padding:18px 20px;background:#161b28;border:1px solid #313647;border-radius:17px;color:#abb2c5;font-size:13px;line-height:1.65;margin-bottom:19px}
+  .info-panel strong{color:#fff}
+  .player-box{border:1px solid #363c51;background:#151925;border-radius:20px;padding:16px;margin-bottom:15px}
+  #mediaPlayer{display:none;width:100%;max-height:490px;background:#05060a;border-radius:13px;aspect-ratio:16/9}
+  #audioPlayer{display:none;width:100%;margin-top:10px}
+  .player-title{font-size:13px;font-weight:700;margin:0 0 10px;overflow-wrap:anywhere}
+  .queue{display:grid;gap:8px;max-height:255px;overflow:auto}
+  .queue-row{width:100%;text-align:left;background:#1a1f2c;border:1px solid #35394b;padding:12px 13px;color:#dddfea;border-radius:11px;display:flex;gap:10px;align-items:center;justify-content:space-between;font-size:12px}
+  .queue-row.now{border-color:#9c82e0;background:#27243e}
+  .queue-row span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .player-controls{display:flex;flex-wrap:wrap;gap:9px;margin-top:13px}
+  .notice{color:#8e94a6;font-size:11px;line-height:1.6;margin-top:12px}
+  .setting-block{border:1px solid #32384b;background:#161a26;border-radius:17px;padding:20px;margin-bottom:13px}
+  .setting-block h3{font-size:15px;margin-bottom:5px}
+  .setting-block p{color:#a9aec0;font-size:12px;line-height:1.65;margin-bottom:15px}
+  .muted{color:var(--muted)}
+  .view{display:none}
+  .view.active{display:block}
+  .mobile-nav{display:none}
+  .modal-backdrop{display:none;position:fixed;inset:0;background:#03050acc;z-index:40;align-items:center;justify-content:center;padding:16px;backdrop-filter:blur(8px)}
+  .modal-backdrop.open{display:flex}
+  .modal{background:#1a1d2c;border:1px solid #45495f;border-radius:22px;padding:23px;width:min(100%,460px);max-height:90dvh;overflow:auto;box-shadow:0 30px 70px #000b}
+  .modal-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:19px}
+  .modal-head h2{margin:0}
+  .field{display:grid;gap:7px;margin-bottom:15px}
+  .field label{font-size:12px;font-weight:700;color:#d3d2e1}
+  .field input,.field select,.field textarea{width:100%;border:1px solid #49495d;border-radius:10px;background:#111422;padding:12px;color:#fff;font-size:14px;outline:none}
+  .field textarea{resize:vertical;min-height:69px}
+  .modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:20px}
+  .toast{position:fixed;bottom:98px;left:50%;transform:translateX(-50%);padding:12px 17px;background:#c7afff;color:#161329;border-radius:12px;box-shadow:0 12px 30px #0008;font-size:12px;font-weight:750;z-index:60;max-width:90vw;text-align:center;display:none}
+  .toast.show{display:block}
+  .footer-note{text-align:center;color:#686f83;font-size:11px;margin-top:40px}
+  @media(max-width:1120px){.content{padding:28px 26px 50px}.service-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.sidebar{width:204px}.shell .content{width:calc(100% - 204px)}}
+  @media(max-width:760px){.sidebar{display:none}.shell{display:block}.shell .content{width:100%;padding:20px 18px calc(100px + env(safe-area-inset-bottom))}.topline{margin-bottom:21px}.service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.service-cover{height:119px}.service-body{padding:12px}.service-body p{min-height:60px}.hero{min-height:270px}.hero-text{padding:25px}.orb{width:330px;right:-163px;top:-55px;opacity:.65}.hero h1{font-size:34px;max-width:290px}.hero p{max-width:265px}.stats{gap:8px}.stat{padding:12px 11px;display:block}.stat-icon{width:29px;height:29px;margin-bottom:7px}.stat-icon .icon{width:17px;height:17px}.stat strong{font-size:21px}.stat small{font-size:10px}.mobile-nav{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:25;background:#121522ef;border-top:1px solid #36394d;backdrop-filter:blur(20px);padding:8px 4px calc(8px + env(safe-area-inset-bottom));justify-content:space-around}.mobile-nav .navbtn{display:flex;flex-direction:column;gap:4px;padding:6px 5px;min-width:0;width:19%;text-align:center;border-radius:10px;align-items:center;font-size:10px}.mobile-nav .navbtn .icon{width:21px;height:21px}.pill-status{font-size:10px;padding:8px}.greeting{font-size:12px}}
+  @media(max-width:350px){.service-grid{grid-template-columns:1fr}.service-body p{min-height:0}.hero h1{font-size:29px}.pill-status{display:none}}
+  @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><defs>
+<symbol id="i-play" viewBox="0 0 24 24"><polygon points="7 3 21 12 7 21 7 3"/></symbol>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 21v-8h6v8"/></symbol>
+<symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m16 8-2.5 5.5L8 16l2.5-5.5L16 8z"/></symbol>
+<symbol id="i-library" viewBox="0 0 24 24"><rect x="3" y="4" width="5" height="17" rx="1"/><rect x="10" y="4" width="5" height="17" rx="1"/><path d="m18 6 3 15M17 7l3-.7"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0l-1 1-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+<symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19 13a7 7 0 0 0 0-2l2-1.6-2-3.4-2.4 1a7 7 0 0 0-1.7-1L14.5 3h-4L10 6a7 7 0 0 0-1.7 1l-2.4-1-2 3.4L6 11a7 7 0 0 0 0 2l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 1.7 1l.5 3h4l.5-3a7 7 0 0 0 1.7-1l2.4 1 2-3.4Z"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7"/><path d="m16 16 5 5"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+<symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><ellipse cx="6" cy="18" rx="3" ry="2"/><ellipse cx="18" cy="16" rx="3" ry="2"/></symbol>
+<symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3z"/></symbol>
+<symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 17V3m-5 5 5-5 5 5M4 17v3h16v-3"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v14m-5-5 5 5 5-5M4 18v3h16v-3"/></symbol>
+<symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 14h10l1-14M10 11v6m4-6v6"/></symbol>
+<symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M4 7h3c5 0 5 10 10 10h3m-4-4 4 4-4 4M4 17h3c2 0 3-1 4-3m2-4c1-2 2-3 4-3h3m-4-4 4 4-4 4"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+<symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v.2"/></symbol>
+</defs></svg>
+<div class="shell">
+<aside class="sidebar">
+  <a class="brand" href="#home" data-view="home"><span class="brand-logo"><svg class="icon"><use href="#i-play"/></svg></span><strong>MY ENTERTAINMENT<br><small>HUB / YOUR SPACE</small></strong></a>
+  <nav class="navlist" aria-label="Main navigation">
+    <button class="navbtn active" data-view="home"><svg class="icon"><use href="#i-home"/></svg>Home</button>
+    <button class="navbtn" data-view="discover"><svg class="icon"><use href="#i-compass"/></svg>Discover</button>
+    <button class="navbtn" data-view="library"><svg class="icon"><use href="#i-library"/></svg>My Library</button>
+    <button class="navbtn" data-view="favorites"><svg class="icon"><use href="#i-heart"/></svg>Favorites</button>
+    <button class="navbtn" data-view="settings"><svg class="icon"><use href="#i-settings"/></svg>Settings</button>
+  </nav>
+  <div class="side-footer"><svg class="icon"><use href="#i-check"/></svg><strong>No subscription. No ads here.</strong><p>Your personal picks stay in this browser. External streaming services may show ads.</p></div>
+</aside>
+<main class="content">
+  <div class="topline"><span class="greeting" id="topGreeting">Your entertainment, in one place.</span><div class="top-actions"><span class="pill-status"><span class="dot"></span> NO SERVER NEEDED</span><button class="circle-btn" id="quickAdd" title="Add title to my list" aria-label="Add title to my list"><svg class="icon"><use href="#i-plus"/></svg></button></div></div>
+  <div class="view active" id="view-home">
+    <div class="hero"><div class="orb" aria-hidden="true"></div><div class="hero-text"><div class="eyebrow">YOUR SCREEN. YOUR RULES.</div><h1>Everything you love.<br>One little hub.</h1><p>Free films, shows, soundtracks, podcasts and your own collection — organized the way you like.</p><div class="hero-actions"><button class="btn primary" data-go="discover"><svg class="icon"><use href="#i-compass"/></svg> Explore free content</button><button class="btn ghost" id="heroAdd"><svg class="icon"><use href="#i-plus"/></svg> Add to my list</button></div></div></div>
+    <div class="stats"><div class="stat"><span class="stat-icon"><svg class="icon"><use href="#i-library"/></svg></span><div><strong id="statTitles">0</strong><small>Saved titles</small></div></div><div class="stat"><span class="stat-icon"><svg class="icon"><use href="#i-heart"/></svg></span><div><strong id="statFavorites">0</strong><small>Favorites</small></div></div><div class="stat"><span class="stat-icon"><svg class="icon"><use href="#i-play"/></svg></span><div><strong id="statMedia">0</strong><small>Local files loaded</small></div></div></div>
+    <section><div class="section-head"><h2>Start watching</h2><button class="linkbtn" data-go="discover" data-category="watch">View all →</button></div><div id="homeWatch" class="service-grid"></div></section>
+    <section><div class="section-head"><h2>Listen & unwind</h2><button class="linkbtn" data-go="discover" data-category="music">View all →</button></div><div id="homeMusic" class="service-grid"></div></section>
+    <section><div class="section-head"><h2>Learn something new</h2><button class="linkbtn" data-go="discover" data-category="learn">View all →</button></div><div id="homeLearn" class="service-grid"></div></section>
+    <section><div class="section-head"><h2>Your watchlist</h2><button class="linkbtn" data-go="library">Manage list →</button></div><div id="homeList"></div></section>
+  </div>
+  <div class="view" id="view-discover">
+    <h1>Find your next favorite.</h1><p class="lead">Official, legal sources only. Services open on their own websites or apps; availability can vary.</p>
+    <label class="searchbox"><svg class="icon"><use href="#i-search"/></svg><input id="discoverSearch" type="search" placeholder="Search services, topics and categories" autocomplete="off" aria-label="Search services"></label>
+    <div class="chips" id="categoryChips" aria-label="Filter services"></div>
+    <div class="section-head"><h2 id="discoverHeading">All free sources</h2><span class="hint" id="discoverCount"></span></div><div id="discoverGrid" class="service-grid"></div>
+  </div>
+  <div class="view" id="view-library">
+    <h1>My Library</h1><p class="lead">Build a watchlist of movies, series, and everything you want to remember. Play compatible personal files from the Files app below.</p>
+    <div class="section-head"><h2>My watchlist</h2><button class="btn primary" id="libraryAdd"><svg class="icon"><use href="#i-plus"/></svg>Add a title</button></div>
+    <div class="chips" id="statusChips"></div><div id="libraryList" class="library-list" style="margin-bottom:38px"></div>
+    <div class="section-head"><h2>Play files from this device</h2></div>
+    <div class="info-panel"><strong>Private local playback.</strong> Choose audio or video files from Files or iCloud Drive. Files are played on your device, not uploaded anywhere. Browser-supported formats work best (such as MP4, MOV, MP3 and M4A).</div>
+    <div class="tools-row"><label class="btn primary" for="filePicker"><svg class="icon"><use href="#i-plus"/></svg>Choose my files</label><input type="file" id="filePicker" accept="video/*,audio/*,.mp4,.mov,.m4v,.mp3,.m4a,.wav,.webm" multiple hidden><label for="subtitlePicker" class="btn ghost"><svg class="icon"><use href="#i-upload"/></svg>Add .vtt subtitles</label><input type="file" id="subtitlePicker" accept=".vtt,text/vtt" hidden></div>
+    <div class="player-box"><div class="player-title" id="playerTitle">Nothing playing yet</div><video id="mediaPlayer" playsinline controls preload="metadata"></video><audio id="audioPlayer" controls preload="metadata"></audio><div id="playerEmpty" class="empty" style="padding:25px 15px"><svg class="icon"><use href="#i-video"/></svg><strong>Your player is ready</strong><p>Select a file from your iPhone or iPad to start listening or watching.</p></div><div class="player-controls"><button class="smallbtn" id="prevTrack">Previous</button><button class="smallbtn" id="nextTrack">Next</button><button class="smallbtn" id="shuffleTrack"><svg class="icon" style="width:15px;height:15px;vertical-align:middle"><use href="#i-shuffle"/></svg> Shuffle</button></div><p class="notice">Resume positions are remembered for files you reselect in this browser. You must choose the files again after closing the page. Subtitle support depends on the video format and browser.</p></div>
+    <div class="section-head"><h2>Current queue</h2><span class="hint" id="queueCount">0 files</span></div><div class="queue" id="fileQueue"></div>
+  </div>
+  <div class="view" id="view-favorites"><h1>Your favorites.</h1><p class="lead">Shortcuts you love, saved for a single tap. Favorite a service using the heart on any card.</p><div id="favoritesGrid" class="service-grid"></div><div style="margin-top:28px"><h2>Recently opened</h2><div id="recentList" class="library-list"></div></div></div>
+  <div class="view" id="view-settings"><h1>Make it yours.</h1><p class="lead">No account or monthly payment. Your preferences are saved on this device.</p>
+    <div class="setting-block"><h3>Move your list between devices</h3><p>Favorites and watchlist items do not sync automatically between iPhone and iPad. Export a backup to Files/iCloud Drive, then import it on your other device. Import replaces the existing saved list on that device.</p><div class="tools-row"><button class="btn primary" id="exportData"><svg class="icon"><use href="#i-download"/></svg>Export backup</button><label class="btn ghost" for="importData"><svg class="icon"><use href="#i-upload"/></svg>Import backup</label><input id="importData" type="file" accept="application/json,.json" hidden></div></div>
+    <div class="setting-block"><h3>Install on your Home Screen</h3><p>After publishing this web app, open it in Safari → Share → Add to Home Screen → enable “Open as Web App” → Add. Repeat on your other device.</p></div>
+    <div class="setting-block"><h3>Jellyfin: coming in Step 2</h3><p>Once your Mac runs a Jellyfin server, we'll add access to your personal movies, series, music, and cover art across your home network.</p><a class="btn ghost" href="https://jellyfin.org/" target="_blank" rel="noopener noreferrer">About Jellyfin <svg class="icon"><use href="#i-arrow"/></svg></a></div>
+    <div class="setting-block"><h3>Privacy & saved information</h3><p>Only titles, favorite sources, recent links and playback positions are stored in this browser's local storage. Media stays on your device and is never sent to a server by this hub. Clearing Safari website data may erase your saved list. Back up before doing so.</p><button class="btn ghost" id="clearData"><svg class="icon"><use href="#i-trash"/></svg>Clear saved list</button></div>
+  </div>
+  <div class="footer-note">MY ENTERTAINMENT HUB · PERSONAL V1 · MADE FOR IPHONE + IPAD</div>
+</main>
+</div>
+<nav class="mobile-nav" aria-label="Mobile navigation"><button class="navbtn active" data-view="home"><svg class="icon"><use href="#i-home"/></svg>Home</button><button class="navbtn" data-view="discover"><svg class="icon"><use href="#i-compass"/></svg>Discover</button><button class="navbtn" data-view="library"><svg class="icon"><use href="#i-library"/></svg>Library</button><button class="navbtn" data-view="favorites"><svg class="icon"><use href="#i-heart"/></svg>Saved</button><button class="navbtn" data-view="settings"><svg class="icon"><use href="#i-settings"/></svg>Settings</button></nav>
+<div class="modal-backdrop" id="titleModal" role="presentation"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-head"><h2 id="modalTitle">Add to your library</h2><button class="circle-btn" id="closeModal" aria-label="Close dialog"><svg class="icon"><use href="#i-close"/></svg></button></div><form id="titleForm"><div class="field"><label for="titleName">Title *</label><input id="titleName" required maxlength="120" placeholder="Movie, show, album, podcast…"></div><div class="field"><label for="titleType">Type</label><select id="titleType"><option>Movie</option><option>TV Show</option><option>Documentary</option><option>Music</option><option>Podcast</option><option>Other</option></select></div><div class="field"><label for="titleStatus">Status</label><select id="titleStatus"><option value="plan">Want to watch / listen</option><option value="active">In progress</option><option value="done">Finished</option></select></div><div class="field"><label for="titleLink">Official link (optional)</label><input type="url" id="titleLink" maxlength="700" placeholder="https://example.com/title"></div><div class="field"><label for="titleNotes">Notes (optional)</label><textarea id="titleNotes" maxlength="400" placeholder="Season, genre, where to find it…"></textarea></div><div class="modal-actions"><button type="button" class="btn ghost" id="cancelModal">Cancel</button><button type="submit" class="btn primary">Save title</button></div></form></div></div>
+<div class="toast" role="status" id="toast"></div>
+<script>
+(()=>{'use strict';
+const $=sel=>document.querySelector(sel), $$=sel=>Array.from(document.querySelectorAll(sel));
+const icon=(id)=>'<svg class="icon"><use href="#i-'+id+'"/></svg>';
+const SERVICES=[
+{id:'tubi',name:'Tubi',mark:'tubi',cat:'watch',type:'Free movies + TV',desc:'Thousands of films and series. Legal, free and supported by ads.',url:'https://tubitv.com/',color:'linear-gradient(130deg,#ef7219,#ad2618)'},
+{id:'pluto',name:'Pluto TV',mark:'pluto tv',cat:'watch',type:'Live + on demand',desc:'Live TV channels and movies whenever you feel like watching.',url:'https://pluto.tv/',color:'linear-gradient(125deg,#25356c,#0b1029)'},
+{id:'plex',name:'Plex Free',mark:'PLEX',cat:'watch',type:'Free movies + TV',desc:'Ad-supported movies, series and live channels.',url:'https://watch.plex.tv/',color:'linear-gradient(125deg,#303238,#0c1219)'},
+{id:'pbs',name:'PBS',mark:'PBS',cat:'learn',type:'Documentaries + TV',desc:'NOVA, FRONTLINE, nature, history and more; some content is restricted.',url:'https://www.pbs.org/video/',color:'linear-gradient(125deg,#176796,#13334b)'},
+{id:'kanopy',name:'Kanopy',mark:'kanopy',cat:'watch',type:'Library card required',desc:'Indie films, classic cinema and documentaries through participating libraries.',url:'https://www.kanopy.com/',color:'linear-gradient(125deg,#164b55,#103039)'},
+{id:'roku',name:'The Roku Channel',mark:'Roku',cat:'watch',type:'Free with ads',desc:'On-demand movies, shows and live entertainment.',url:'https://therokuchannel.roku.com/',color:'linear-gradient(125deg,#6132b6,#321d68)'},
+{id:'somafm',name:'SomaFM',mark:'soma fm',cat:'music',type:'Internet radio',desc:'Independent, listener-supported, commercial-free music stations.',url:'https://somafm.com/',color:'linear-gradient(130deg,#4e256e,#c04a91)'},
+{id:'bandcamp',name:'Bandcamp',mark:'bandcamp',cat:'music',type:'Artist discovery',desc:'Discover and preview music from independent artists; some listening is limited.',url:'https://bandcamp.com/',color:'linear-gradient(135deg,#236a80,#1a465d)'},
+{id:'kexp',name:'KEXP',mark:'KEXP',cat:'music',type:'Live music + radio',desc:'Independent music radio and live performances.',url:'https://www.kexp.org/',color:'linear-gradient(125deg,#a45627,#473322)'},
+{id:'applepod',name:'Apple Podcasts',mark:'Podcasts',cat:'podcasts',type:'Podcasts',desc:'Browse free shows and episodes; some creators offer paid extras.',url:'https://podcasts.apple.com/us/browse',color:'linear-gradient(135deg,#8353d5,#433879)'},
+{id:'npr',name:'NPR',mark:'npr',cat:'podcasts',type:'News + podcasts',desc:'Shows, stories and podcasts from public radio.',url:'https://www.npr.org/podcasts/',color:'linear-gradient(125deg,#cc4b48,#5a2c45)'},
+{id:'ted',name:'TED',mark:'TED',cat:'learn',type:'Talks + ideas',desc:'Free talks about science, technology, creativity and more.',url:'https://www.ted.com/talks',color:'linear-gradient(120deg,#cd3439,#661921)'},
+{id:'nasa',name:'NASA+',mark:'NASA+',cat:'learn',type:'Space + science',desc:'Free NASA documentaries, missions and educational programming.',url:'https://plus.nasa.gov/',color:'linear-gradient(120deg,#2b5591,#09162c)'},
+{id:'khan',name:'Khan Academy',mark:'Khan',cat:'learn',type:'Free courses',desc:'Educational videos and courses in math, science and more.',url:'https://www.khanacademy.org/',color:'linear-gradient(125deg,#137f62,#154d48)'},
+{id:'archive',name:'Internet Archive',mark:'ARCHIVE',cat:'learn',type:'Historical collections',desc:'Explore historical video and audio; check rights before downloading or reuse.',url:'https://archive.org/details/movies',color:'linear-gradient(125deg,#4b586f,#2b364a)'}
+];
+const labels={all:'All sources',watch:'Movies & TV',music:'Music & radio',podcasts:'Podcasts',learn:'Documentaries & learning'};
+const storeKey='my_entertainment_hub_v1';
+function cleanUrl(v){try{const u=new URL(String(v||''));return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}}
+function hydrate(){try{const raw=JSON.parse(localStorage.getItem(storeKey));if(!raw||typeof raw!=='object')return null;return {items:Array.isArray(raw.items)?raw.items.slice(0,500).filter(i=>i&&typeof i.title==='string').map(i=>({id:String(i.id||''),title:i.title.slice(0,120),type:String(i.type||'Other').slice(0,50),status:['plan','active','done'].includes(i.status)?i.status:'plan',notes:String(i.notes||'').slice(0,400),url:cleanUrl(i.url)})):[],favorites:Array.isArray(raw.favorites)?raw.favorites.filter(id=>SERVICES.some(s=>s.id===id)):[],recent:Array.isArray(raw.recent)?raw.recent.filter(id=>SERVICES.some(s=>s.id===id)).slice(0,8):[],resume:(raw.resume&&typeof raw.resume==='object')?raw.resume:{}}}catch{return null}}
+let data=hydrate()||{items:[],favorites:[],recent:[],resume:{}};
+let currentView='home',discoverCategory='all',listStatus='all',files=[],fileUrls=[],currentIndex=-1,subtitleUrl='',resumeTick=0,selectedVideo=false;
+function save(){try{localStorage.setItem(storeKey,JSON.stringify(data))}catch{notify('Browser storage full; export your list as a backup.')}}
+let toastTimer;function notify(s){const t=$('#toast');t.textContent=s;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),3000)}
+function el(tag,className,text){const a=document.createElement(tag);if(className)a.className=className;if(text!==undefined)a.textContent=text;return a}
+function navigate(to,cat){if(!$('#view-'+to))return;currentView=to;$$('.view').forEach(v=>v.classList.toggle('active',v.id==='view-'+to));$$('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===to));if(cat)discoverCategory=cat;if(to==='discover')renderDiscover();if(to==='library')renderLibrary();if(to==='favorites')renderFavorites();if(to==='home')renderHome();window.scrollTo({top:0,behavior:'instant'});try{history.replaceState(null,'','#'+to)}catch{}}
+$$('[data-view]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();navigate(b.dataset.view)}));
+$$('[data-go]').forEach(b=>b.addEventListener('click',()=>navigate(b.dataset.go,b.dataset.category)));
+function serviceCard(s){let card=el('article','service-card'),cover=el('div','service-cover');cover.style.background=s.color;cover.append(el('span','service-type',s.type),el('span','service-mark',s.mark));const body=el('div','service-body');body.append(el('h3','',s.name),el('p','',s.desc));const actions=el('div','card-actions');const a=el('a','open-service','Open ↗');a.href=s.url;a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('aria-label','Open '+s.name+' official website');a.addEventListener('click',()=>{data.recent=[s.id,...data.recent.filter(id=>id!==s.id)].slice(0,8);save();renderFavorites()});const heart=el('button','favorite'+(data.favorites.includes(s.id)?' selected':''));heart.type='button';heart.innerHTML=icon('heart');heart.setAttribute('aria-label',(data.favorites.includes(s.id)?'Remove ':'Save ')+s.name+' favorite');heart.setAttribute('aria-pressed',String(data.favorites.includes(s.id)));heart.addEventListener('click',()=>{data.favorites=data.favorites.includes(s.id)?data.favorites.filter(id=>id!==s.id):[...data.favorites,s.id];save();refresh();notify(data.favorites.includes(s.id)?s.name+' saved to favorites':s.name+' removed')});actions.append(a,heart);body.append(actions);card.append(cover,body);return card}
+function appendCards(parent,arr){parent.replaceChildren(...arr.map(serviceCard))}
+function renderHome(){appendCards($('#homeWatch'),SERVICES.filter(s=>s.cat==='watch').slice(0,4));appendCards($('#homeMusic'),SERVICES.filter(s=>s.cat==='music').slice(0,3));appendCards($('#homeLearn'),SERVICES.filter(s=>s.cat==='learn').slice(0,4));$('#statTitles').textContent=data.items.length;$('#statFavorites').textContent=data.favorites.length;$('#statMedia').textContent=files.length;const target=$('#homeList');target.replaceChildren();if(!data.items.length){const e=emptyCard('Start your own watchlist','Save any movie, series, documentary, album or podcast to come back to later.','Add your first title',()=>openModal());target.append(e)}else{target.className='library-list';data.items.slice(0,3).forEach(i=>target.append(itemCard(i)))}}
+function emptyCard(title,description,action,handler){const wrap=el('div','empty');wrap.innerHTML=icon('library');wrap.append(el('strong','',title),el('p','',description));if(action){const b=el('button','btn primary',action);b.addEventListener('click',handler);wrap.append(b)}return wrap}
+function renderDiscover(){const chips=$('#categoryChips');chips.replaceChildren();Object.entries(labels).forEach(([cat,name])=>{const b=el('button','chip'+(discoverCategory===cat?' selected':''),name);b.onclick=()=>{discoverCategory=cat;renderDiscover()};chips.append(b)});const query=$('#discoverSearch').value.trim().toLowerCase();let matched=SERVICES.filter(s=>(discoverCategory==='all'||s.cat===discoverCategory)&&(!query||[s.name,s.desc,s.type,labels[s.cat]].join(' ').toLowerCase().includes(query)));$('#discoverHeading').textContent=labels[discoverCategory];$('#discoverCount').textContent=matched.length+' sources';const grid=$('#discoverGrid');matched.length?appendCards(grid,matched):grid.replaceChildren(emptyCard('No results','Try a different category or search term.'))}
+$('#discoverSearch').addEventListener('input',renderDiscover);
+const statusChoices={all:'All titles',plan:'Want to watch',active:'In progress',done:'Finished'};
+function itemCard(i){const row=el('div','library-card'),tile=el('div','media-tile');tile.innerHTML=icon(['Music','Podcast'].includes(i.type)?'music':'video');const detail=el('div','library-main');detail.append(el('strong','',i.title),el('p','',i.type+(i.notes?' · '+i.notes:'')));const select=el('select','status-select');select.setAttribute('aria-label','Status for '+i.title);Object.entries(statusChoices).filter(([s])=>s!=='all').forEach(([s,label])=>{const opt=el('option','',label);opt.value=s;select.append(opt)});select.value=i.status;select.onchange=()=>{i.status=select.value;save();refresh()};row.append(tile,detail,select);if(i.url){const a=el('a','smallbtn','Open ↗');a.href=i.url;a.target='_blank';a.rel='noopener noreferrer';row.append(a)}const del=el('button','smallbtn');del.innerHTML=icon('trash');del.setAttribute('aria-label','Remove '+i.title);del.onclick=()=>{if(confirm('Remove “'+i.title+'” from your list?')){data.items=data.items.filter(it=>it.id!==i.id);save();refresh()}};row.append(del);return row}
+function renderLibrary(){const chips=$('#statusChips');chips.replaceChildren();Object.entries(statusChoices).forEach(([v,label])=>{const b=el('button','chip'+(v===listStatus?' selected':''),label);b.onclick=()=>{listStatus=v;renderLibrary()};chips.append(b)});const target=$('#libraryList');const matched=data.items.filter(i=>listStatus==='all'||i.status===listStatus);target.replaceChildren();if(!matched.length)target.append(emptyCard('Your list is waiting',listStatus==='all'?'Add a show, movie, documentary or music title to organize it here.':'Nothing in this category yet.','Add a title',openModal));else matched.slice().reverse().forEach(i=>target.append(itemCard(i)))}
+function renderFavorites(){const target=$('#favoritesGrid'),fav=SERVICES.filter(s=>data.favorites.includes(s.id));fav.length?appendCards(target,fav):target.replaceChildren(emptyCard('No favorites yet','Tap the heart on a streaming or listening service to keep it here.','Explore services',()=>navigate('discover')));const recent=$('#recentList');recent.replaceChildren();if(!data.recent.length)recent.append(emptyCard('No recent services yet','The services you open will be listed here.'));else data.recent.forEach(id=>{const s=SERVICES.find(x=>x.id===id);if(!s)return;const row=el('div','library-card');const tile=el('div','media-tile');tile.innerHTML=icon('arrow');const name=el('div','library-main');name.append(el('strong','',s.name),el('p','',s.type));const a=el('a','smallbtn','Open ↗');a.href=s.url;a.target='_blank';a.rel='noopener noreferrer';a.onclick=()=>{data.recent=[s.id,...data.recent.filter(x=>x!==s.id)];save()};row.append(tile,name,a);recent.append(row)})}
+function refresh(){renderHome();renderDiscover();renderLibrary();renderFavorites()}
+function openModal(){$('#titleModal').classList.add('open');$('#titleForm').reset();setTimeout(()=>$('#titleName').focus(),50)}
+function closeModal(){$('#titleModal').classList.remove('open')}
+['#quickAdd','#heroAdd','#libraryAdd'].forEach(q=>$(q).addEventListener('click',openModal));['#closeModal','#cancelModal'].forEach(q=>$(q).addEventListener('click',closeModal));$('#titleModal').addEventListener('click',e=>{if(e.target===$('#titleModal'))closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+$('#titleForm').addEventListener('submit',e=>{e.preventDefault();const title=$('#titleName').value.trim();if(!title)return;const link=$('#titleLink').value.trim();if(link&&!cleanUrl(link)){notify('Please use a valid http(s) link.');return}data.items.push({id:String(Date.now())+'-'+Math.random().toString(36).slice(2),title:title.slice(0,120),type:$('#titleType').value,status:$('#titleStatus').value,notes:$('#titleNotes').value.trim().slice(0,400),url:cleanUrl(link)});save();closeModal();refresh();navigate('library');notify('Added to your library')});
+function mediaKey(f){return [f.name,f.size,f.lastModified].join('|')}
+function stopPlaying(){const vid=$('#mediaPlayer'),aud=$('#audioPlayer');vid.pause();aud.pause();vid.removeAttribute('src');aud.removeAttribute('src');vid.load();aud.load()}
+function playFile(idx,auto=false){if(idx<0||idx>=files.length)return;const f=files[idx],old=currentIndex;currentIndex=idx;stopPlaying();const video=f.type.startsWith('video/')||/\.(mp4|mov|m4v|webm)$/i.test(f.name),player=$(video?'#mediaPlayer':'#audioPlayer');selectedVideo=video;player.src=fileUrls[idx];$('#mediaPlayer').style.display=video?'block':'none';$('#audioPlayer').style.display=video?'none':'block';$('#playerEmpty').style.display='none';$('#playerTitle').textContent=(video?'Now watching: ':'Now listening: ')+f.name;
+ if(video)applySubtitle();renderQueue();player.onloadedmetadata=()=>{const time=Number(data.resume[mediaKey(f)]||0);if(Number.isFinite(time)&&time>0&&time<player.duration-5){try{player.currentTime=time}catch{}}};
+ if(auto)player.play().catch(()=>{});if(old!==idx)notify('Loaded '+f.name)}
+function applySubtitle(){const video=$('#mediaPlayer');video.querySelectorAll('track').forEach(t=>t.remove());if(subtitleUrl&&selectedVideo){const t=document.createElement('track');t.kind='subtitles';t.label='Imported subtitles';t.srclang='en';t.src=subtitleUrl;t.default=true;video.append(t)}}
+function renderQueue(){const target=$('#fileQueue');target.replaceChildren();$('#queueCount').textContent=files.length+' files';files.forEach((f,i)=>{const b=el('button','queue-row'+(i===currentIndex?' now':''));b.append(el('span','',f.name),el('span','',i===currentIndex?'PLAYING':'PLAY'));b.onclick=()=>playFile(i,true);target.append(b)})}
+$('#filePicker').addEventListener('change',e=>{stopPlaying();fileUrls.forEach(url=>URL.revokeObjectURL(url));files=Array.from(e.target.files||[]).filter(f=>f.type.startsWith('audio/')||f.type.startsWith('video/')||/\.(m4a|mp3|wav|mp4|mov|m4v|webm)$/i.test(f.name));fileUrls=files.map(f=>URL.createObjectURL(f));currentIndex=-1;if(files.length){playFile(0);notify(files.length+' files loaded')}else notify('No playable audio/video files were selected');refresh()});
+$('#subtitlePicker').addEventListener('change',e=>{const f=e.target.files&&e.target.files[0];if(!f)return;if(subtitleUrl)URL.revokeObjectURL(subtitleUrl);subtitleUrl=URL.createObjectURL(f);applySubtitle();notify('Subtitle file added. Enable subtitles in player controls.')});
+$('#prevTrack').onclick=()=>{if(files.length)playFile((currentIndex-1+files.length)%files.length,true)};
+$('#nextTrack').onclick=()=>{if(files.length)playFile((currentIndex+1)%files.length,true)};
+$('#shuffleTrack').onclick=()=>{if(files.length)playFile(Math.floor(Math.random()*files.length),true)};
+['#mediaPlayer','#audioPlayer'].forEach(q=>{const p=$(q);p.addEventListener('timeupdate',()=>{if(!files[currentIndex]||p.style.display==='none'||Date.now()-resumeTick<4000)return;resumeTick=Date.now();data.resume[mediaKey(files[currentIndex])]=Math.floor(p.currentTime);save()});p.addEventListener('ended',()=>{if(files.length>1)playFile((currentIndex+1)%files.length,true)})});
+$('#exportData').onclick=()=>{const blob=new Blob([JSON.stringify({version:1,exported:new Date().toISOString(),items:data.items,favorites:data.favorites,recent:data.recent,resume:data.resume},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='my-entertainment-hub-backup.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);notify('Backup prepared. Save it to Files/iCloud Drive.')};
+$('#importData').addEventListener('change',async e=>{const f=e.target.files&&e.target.files[0];if(!f)return;try{if(f.size>1500000)throw new Error('Backup file too large');const value=JSON.parse(await f.text());if(!Array.isArray(value.items)||!Array.isArray(value.favorites))throw new Error('Not a valid Hub backup');if(!confirm('Replace this device’s saved watchlist and favorites with the backup?'))return;localStorage.setItem(storeKey,JSON.stringify(value));data=hydrate()||data;save();refresh();notify('Backup imported successfully')}catch(err){notify('Could not import: '+err.message)}e.target.value=''});
+$('#clearData').onclick=()=>{if(confirm('Clear your watchlist, favorites and recent history on this device? This cannot be undone.')){data={items:[],favorites:[],recent:[],resume:{}};save();refresh();notify('Saved data cleared')}};
+// Single-file edition: no service worker; use full package for offline shell.
+const start=location.hash.replace('#','');refresh();if(['home','discover','library','favorites','settings'].includes(start))navigate(start);
+})();
+</script>
+</body></html>
